@@ -7,7 +7,7 @@
 `node-red` needs to be installed.
 
 ```
-npm install -g --unsafe-perm node-re
+npm install -g --unsafe-perm node-red
 ```
 
 # Test it
