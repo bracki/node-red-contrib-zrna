@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    RED.nodes.registerType('GainInv',{
+        category: 'zrna',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            gain: {value:0, validate: RED.validators.number()}
+        },
+        inputs:1,
+        outputs:1,
+        label: function() {
+            return this.name||"GainInv";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="GainInv">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-gain"><i class="icon-tag"></i> Gain</label>
+        <input type="text" id="node-input-gain" placeholder="Gain">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="GainInv">
+    <p>An inverting gain stage. Amplify or attenuate and then invert a signal.</p>
+</script>

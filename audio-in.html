@@ -1,0 +1,25 @@
+<script type="text/javascript">
+    RED.nodes.registerType('AudioIn',{
+        category: 'zrna',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:0,
+        outputs:1,
+        label: function() {
+            return this.name||"AudioIn";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="AudioIn">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="AudioIn">
+    <p>Receive a signal from the audio input channel.</p>
+</script>

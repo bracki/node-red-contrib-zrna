@@ -1,0 +1,22 @@
+{
+  "name": "node-red-contrib-zrna",
+  "version": "0.0.1",
+  "description": "Node definitions for https://zrna.org/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bracki/node-red-contrib-zrna.git"
+  },
+  "author": "Jan Brauer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bracki/node-red-contrib-zrna/issues"
+  },
+  "homepage": "https://github.com/bracki/node-red-contrib-zrna#readme",
+  "node-red": {
+    "nodes": {
+      "GainInv": "gain-inv.js",
+      "AudioIn": "audio-in.js",
+      "AudioOut": "audio-out.js"
+    }
+  }
+}
